@@ -1,0 +1,124 @@
+/* Footer.css */
+.footer {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  padding: 2rem 0 1rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.copyright-text {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.highlight {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  position: relative;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  padding-bottom: 2px;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.link-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover .link-underline {
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-icon {
+  color: #aaa;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-icon:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 1.5rem 0;
+}
+
+.credit-text {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .footer-nav {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-nav {
+    gap: 0.8rem;
+  }
+  
+  .social-links {
+    gap: 0.8rem;
+  }
+}
